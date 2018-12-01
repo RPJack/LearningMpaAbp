@@ -4,6 +4,7 @@ using Abp.Zero.EntityFramework;
 using LearningMpaAbp.Authorization.Roles;
 using LearningMpaAbp.Authorization.Users;
 using LearningMpaAbp.MultiTenancy;
+using LearningMpaAbp.Tasks;
 
 namespace LearningMpaAbp.EntityFramework
 {
@@ -50,5 +51,11 @@ namespace LearningMpaAbp.EntityFramework
             base.OnModelCreating(modelBuilder);
 
         }
+
+
+
+        public IDbSet<MyTask> Tasks { get; set; }
+
+
     }
 }

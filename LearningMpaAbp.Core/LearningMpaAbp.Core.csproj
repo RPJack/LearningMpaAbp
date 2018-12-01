@@ -199,6 +199,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IRespositories\IBackedTaskRespository.cs" />
     <Compile Include="LearningMpaAbpConsts.cs" />
     <Compile Include="LearningMpaAbpCoreModule.cs" />
     <Compile Include="AppVersionHelper.cs" />

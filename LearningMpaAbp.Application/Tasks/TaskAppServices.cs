@@ -4,224 +4,94 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using Abp.AutoMapper;
+using Abp.Domain.Repositories;
+using Abp.Timing;
+using AutoMapper;
+using LearningMpaAbp.Tasks.Dto;
 
 namespace LearningMpaAbp.Tasks
 {
-    public class TaskAppServices : ITaskAppServices
+    public class TaskAppServices : LearningMpaAbpAppServiceBase, ITaskAppServices
     {
-        public int Count()
+        private readonly IRepository<MyTask> taskRespository;
+
+        public TaskAppServices(IRepository<MyTask> taskRespository)
         {
-            throw new NotImplementedException();
+            this.taskRespository = taskRespository;
         }
 
-        public int Count(Expression<Func<MyTask, bool>> predicate)
+        public int CreateTask(CreateTaskInput input)
         {
-            throw new NotImplementedException();
+            Logger.Info("Creating a task for input:"+input);
+            var task = new MyTask
+            {
+                Title = input.Title,
+                Description = input.Description,
+                State = input.state,
+                CreationTime = Clock.Now
+            };
+            return taskRespository.InsertAndGetId(task);
         }
 
-        public Task<int> CountAsync()
+        public void DeleteTask(int taskId)
         {
-            throw new NotImplementedException();
+            var task = taskRespository.Get(taskId);
+            if (task != null)
+            {
+                taskRespository.Delete(task);
+            }
         }
 
-        public Task<int> CountAsync(Expression<Func<MyTask, bool>> predicate)
+        public IList<TaskDto> GetAllTasks()
         {
-            throw new NotImplementedException();
+            var tasks = taskRespository.GetAll();
+            return tasks.MapTo<List<TaskDto>>();
         }
 
-        public void Delete(MyTask entity)
+        public TaskDto GetTaskById(int taskId)
         {
-            throw new NotImplementedException();
+            var task = taskRespository.Get(taskId);
+            return task.MapTo<TaskDto>();
         }
 
-        public void Delete(int id)
+        public async Task<TaskDto> GetTaskByIdAsync(int taskId)
         {
-            throw new NotImplementedException();
+            var task = await taskRespository.GetAsync(taskId);
+            return task.MapTo<TaskDto>();
         }
 
-        public void Delete(Expression<Func<MyTask, bool>> predicate)
+        public GetTasksOutput GetTasks(GetTaskInput input)
         {
-            throw new NotImplementedException();
+            var query = taskRespository.GetAll();
+            if (input.AssingedPersonId.HasValue)
+            {
+                query = query.Where(t => t.AssignedPersonId == input.AssingedPersonId.Value);
+            }
+            if (input.State.HasValue)
+            {
+                query = query.Where(t => t.State == input.State.Value);
+            }
+
+            return new GetTasksOutput()
+            {
+                Tasks = Mapper.Map<List<TaskDto>>(query.ToList())
+            };
         }
 
-        public Task DeleteAsync(MyTask entity)
-        {
-            throw new NotImplementedException();
-        }
 
-        public Task DeleteAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
 
-        public Task DeleteAsync(Expression<Func<MyTask, bool>> predicate)
+        public void UpdateTask(UpdateTaskInput input)
         {
-            throw new NotImplementedException();
-        }
-
-        public MyTask FirstOrDefault(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public MyTask FirstOrDefault(Expression<Func<MyTask, bool>> predicate)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<MyTask> FirstOrDefaultAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<MyTask> FirstOrDefaultAsync(Expression<Func<MyTask, bool>> predicate)
-        {
-            throw new NotImplementedException();
-        }
-
-        public MyTask Get(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IQueryable<MyTask> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IQueryable<MyTask> GetAllIncluding(params Expression<Func<MyTask, object>>[] propertySelectors)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<MyTask> GetAllList()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<MyTask> GetAllList(Expression<Func<MyTask, bool>> predicate)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<MyTask>> GetAllListAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<MyTask>> GetAllListAsync(Expression<Func<MyTask, bool>> predicate)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<MyTask> GetAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<MyTask> GetTaskByAssignedPersonId(long personId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public MyTask Insert(MyTask entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int InsertAndGetId(MyTask entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> InsertAndGetIdAsync(MyTask entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<MyTask> InsertAsync(MyTask entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public MyTask InsertOrUpdate(MyTask entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int InsertOrUpdateAndGetId(MyTask entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> InsertOrUpdateAndGetIdAsync(MyTask entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<MyTask> InsertOrUpdateAsync(MyTask entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public MyTask Load(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public long LongCount()
-        {
-            throw new NotImplementedException();
-        }
-
-        public long LongCount(Expression<Func<MyTask, bool>> predicate)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<long> LongCountAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<long> LongCountAsync(Expression<Func<MyTask, bool>> predicate)
-        {
-            throw new NotImplementedException();
-        }
-
-        public T Query<T>(Func<IQueryable<MyTask>, T> queryMethod)
-        {
-            throw new NotImplementedException();
-        }
-
-        public MyTask Single(Expression<Func<MyTask, bool>> predicate)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<MyTask> SingleAsync(Expression<Func<MyTask, bool>> predicate)
-        {
-            throw new NotImplementedException();
-        }
-
-        public MyTask Update(MyTask entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public MyTask Update(int id, Action<MyTask> updateAction)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<MyTask> UpdateAsync(MyTask entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<MyTask> UpdateAsync(int id, Func<MyTask, Task> updateAction)
-        {
-            throw new NotImplementedException();
+            Logger.Info("Updating a task for input:"+input);
+            var task = taskRespository.Get(input.Id);
+            if (input.State.HasValue)
+            {
+                task.State = input.State.Value;
+            }
+            //此处不用做保存操作
+            //因为应用程序服务方法是“工作单位”范围作为默认值
+            //ABP在“工作单元”范围结束时（没有任何例外）自动保存所有更改
         }
     }
 }

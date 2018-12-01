@@ -1,4 +1,6 @@
-﻿using Abp.Domain.Repositories;
+﻿using Abp.Application.Services;
+using Abp.Domain.Repositories;
+using LearningMpaAbp.Tasks.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +10,22 @@ using System.Threading.Tasks;
 namespace LearningMpaAbp.Tasks
 {
     /// <summary>
-    /// 自定义仓储
+    /// 实现IApplicationService，会自动帮助实现依赖注入
     /// </summary>
-    public interface ITaskAppServices:IRepository<MyTask>
+    public interface ITaskAppServices:IApplicationService
     {
-        List<MyTask> GetTaskByAssignedPersonId(long personId);
+        GetTasksOutput GetTasks(GetTaskInput input);
+
+        void UpdateTask(UpdateTaskInput input);
+
+        int CreateTask(CreateTaskInput input);
+
+        Task<TaskDto> GetTaskByIdAsync(int taskId);
+
+        TaskDto GetTaskById(int taskId);
+
+        void DeleteTask(int taskId);
+
+        IList<TaskDto> GetAllTasks();
     }
 }

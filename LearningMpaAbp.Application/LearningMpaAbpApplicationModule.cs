@@ -8,6 +8,8 @@ using Abp.Modules;
 using LearningMpaAbp.Authorization.Roles;
 using LearningMpaAbp.Authorization.Users;
 using LearningMpaAbp.Roles.Dto;
+using LearningMpaAbp.Tasks;
+using LearningMpaAbp.Tasks.Dto;
 using LearningMpaAbp.Users.Dto;
 
 namespace LearningMpaAbp
@@ -17,6 +19,10 @@ namespace LearningMpaAbp
     {
         public override void PreInitialize()
         {
+            Configuration.Modules.AbpAutoMapper().Configurators.Add(mapper =>
+            {
+                //Add your custom AutoMapper mappings here...
+            });
         }
 
         public override void Initialize()
@@ -38,6 +44,19 @@ namespace LearningMpaAbp
 
                 cfg.CreateMap<CreateUserDto, User>();
                 cfg.CreateMap<CreateUserDto, User>().ForMember(x => x.Roles, opt => opt.Ignore());
+
+
+                cfg.CreateMap<CreateTaskInput, MyTask>();
+                cfg.CreateMap<UpdateTaskInput, MyTask>();
+                cfg.CreateMap<TaskDto, UpdateTaskInput>();
+                cfg.CreateMap<MyTask, TaskDto>().ForMember(dto=>dto.AssignedPersonName,map=>map.MapFrom(m=>m.AssignedPerson.FullName));
+
+                //var mappers = IocManager.IocContainer.ResolveAll<IDtoMapping>();
+                //foreach (var item in mappers)
+                //{
+                //    item.CreateMapping(mapper);
+                //}
+
             });
         }
     }

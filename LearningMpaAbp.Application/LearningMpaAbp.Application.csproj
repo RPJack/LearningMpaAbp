@@ -211,6 +211,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IDtoMapping.cs" />
     <Compile Include="LearningMpaAbpApplicationModule.cs" />
     <Compile Include="LearningMpaAbpAppServiceBase.cs" />
     <Compile Include="Authorization\Accounts\AccountAppService.cs" />
@@ -235,6 +236,14 @@
     <Compile Include="Roles\Dto\PermissionDto.cs" />
     <Compile Include="Roles\Dto\RoleDto.cs" />
     <Compile Include="Roles\IRoleAppService.cs" />
+    <Compile Include="Tasks\Dto\CreateTaskInput.cs" />
+    <Compile Include="Tasks\Dto\GetTaskInput.cs" />
+    <Compile Include="Tasks\Dto\GetTasksOutput.cs" />
+    <Compile Include="Tasks\Dto\TaskDto.cs" />
+    <Compile Include="Tasks\Dto\UpdateTaskInput.cs" />
+    <Compile Include="Tasks\ITaskAppServices.cs" />
+    <Compile Include="Tasks\TaskAppServices.cs" />
+    <Compile Include="Tasks\TaskDtoMapping.cs" />
     <Compile Include="Users\Dto\CreateUserDto.cs" />
     <Compile Include="Users\Dto\UpdateUserDto.cs" />
     <Compile Include="Users\Dto\UserDto.cs" />
@@ -256,6 +265,9 @@
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>LearningMpaAbp.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AutoMapper\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

@@ -125,6 +125,21 @@ namespace LearningMpaAbp.Web
                 new StyleBundle("~/Bundles/css")
                     .Include("~/css/main.css")
                 );
+
+            //bundles.Add(
+            //    new ScriptBundle("~/Bundles/js")
+            //        .Include("~/js/main.js")
+            //    );
+
+            //通过捆绑引入到视图中
+            bundles.Add(
+                new ScriptBundle("~/Bundles/unobtrusive/js")
+                .Include(
+                    "~/Scripts/jquery.validate.unobtrusive.min.js",
+                    "~/Scripts/jquery.unobtrusive-ajax.min.js"
+                    )
+                );
+
         }
     }
 }

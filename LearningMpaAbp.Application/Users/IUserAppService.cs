@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
@@ -9,5 +10,10 @@ namespace LearningMpaAbp.Users
     public interface IUserAppService : IAsyncCrudAppService<UserDto, long, PagedResultRequestDto, CreateUserDto, UpdateUserDto>
     {
         Task<ListResultDto<RoleDto>> GetRoles();
+
+        ListResultDto<UserDto> GetUsers();
+
+        IList<UserDto> GetAll();
+
     }
 }

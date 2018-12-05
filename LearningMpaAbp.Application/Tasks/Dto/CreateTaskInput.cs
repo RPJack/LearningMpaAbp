@@ -21,7 +21,7 @@ namespace LearningMpaAbp.Tasks.Dto
         [Required]
         public string Description { get; set; }
 
-        public TaskState state { get; set; }
+        public TaskState State { get; set; }
 
 
         public override string ToString()

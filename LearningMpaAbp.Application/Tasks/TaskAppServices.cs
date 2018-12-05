@@ -28,7 +28,7 @@ namespace LearningMpaAbp.Tasks
             {
                 Title = input.Title,
                 Description = input.Description,
-                State = input.state,
+                State = input.State,
                 CreationTime = Clock.Now
             };
             return taskRespository.InsertAndGetId(task);

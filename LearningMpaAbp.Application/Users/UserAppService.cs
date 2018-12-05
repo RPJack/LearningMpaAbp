@@ -6,6 +6,7 @@ using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.Authorization.Users;
+using Abp.AutoMapper;
 using Abp.Domain.Repositories;
 using Abp.IdentityFramework;
 using LearningMpaAbp.Authorization;
@@ -23,6 +24,7 @@ namespace LearningMpaAbp.Users
         private readonly UserManager _userManager;
         private readonly RoleManager _roleManager;
         private readonly IRepository<Role> _roleRepository;
+        private readonly IRepository<User, long> _userRepository;
 
         public UserAppService(
             IRepository<User, long> repository, 
@@ -34,6 +36,7 @@ namespace LearningMpaAbp.Users
             _userManager = userManager;
             _roleRepository = roleRepository;
             _roleManager = roleManager;
+            _userRepository = repository;
         }
 
         public override async Task<UserDto> Get(EntityDto<long> input)
@@ -99,6 +102,14 @@ namespace LearningMpaAbp.Users
             return new ListResultDto<RoleDto>(ObjectMapper.Map<List<RoleDto>>(roles));
         }
 
+        public ListResultDto<UserDto> GetUsers()
+        {
+            var users = _userRepository.GetAllList();
+            return new ListResultDto<UserDto>(
+                users.MapTo<List<UserDto>>()
+                );
+        }
+
         protected override User MapToEntity(CreateUserDto createInput)
         {
             var user = ObjectMapper.Map<User>(createInput);
@@ -129,6 +140,12 @@ namespace LearningMpaAbp.Users
         protected virtual void CheckErrors(IdentityResult identityResult)
         {
             identityResult.CheckErrors(LocalizationManager);
+        }
+
+        public IList<UserDto> GetAll()
+        {
+            var users = Repository.GetAll();
+            return users.MapTo<List<UserDto>>();
         }
     }
 }

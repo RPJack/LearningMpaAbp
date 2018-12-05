@@ -229,9 +229,9 @@
     <Compile Include="Migrations\201810150846132_Upgraded_To_ABP_v3_9_0.Designer.cs">
       <DependentUpon>201810150846132_Upgraded_To_ABP_v3_9_0.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812011028069_Add_MyTask_Entity.cs" />
-    <Compile Include="Migrations\201812011028069_Add_MyTask_Entity.Designer.cs">
-      <DependentUpon>201812011028069_Add_MyTask_Entity.cs</DependentUpon>
+    <Compile Include="Migrations\201811300708140_Add_MyTask_Entity.cs" />
+    <Compile Include="Migrations\201811300708140_Add_MyTask_Entity.Designer.cs">
+      <DependentUpon>201811300708140_Add_MyTask_Entity.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -262,8 +262,8 @@
     <EmbeddedResource Include="Migrations\201810150846132_Upgraded_To_ABP_v3_9_0.resx">
       <DependentUpon>201810150846132_Upgraded_To_ABP_v3_9_0.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812011028069_Add_MyTask_Entity.resx">
-      <DependentUpon>201812011028069_Add_MyTask_Entity.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811300708140_Add_MyTask_Entity.resx">
+      <DependentUpon>201811300708140_Add_MyTask_Entity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

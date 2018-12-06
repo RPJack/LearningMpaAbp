@@ -21,7 +21,7 @@ namespace LearningMpaAbp.Web
                         L("HomePage"),
                         url: "",
                         icon: "home",
-                        requiresAuthentication: true
+                        requiresAuthentication: true//登录后才会显示
                     )
                 ).AddItem(
                     new MenuItemDefinition(
@@ -29,7 +29,7 @@ namespace LearningMpaAbp.Web
                         L("Tenants"),
                         url: "Tenants",
                         icon: "business",
-                        requiredPermissionName: PermissionNames.Pages_Tenants
+                        requiredPermissionName: PermissionNames.Pages_Tenants//用户指定权限
                     )
                 ).AddItem(
                     new MenuItemDefinition(
@@ -37,7 +37,7 @@ namespace LearningMpaAbp.Web
                         L("Users"),
                         url: "Users",
                         icon: "people",
-                        requiredPermissionName: PermissionNames.Pages_Users
+                        requiredPermissionName: PermissionNames.Pages_Users//用户指定权限
                     )
                 ).AddItem(
                     new MenuItemDefinition(
@@ -45,15 +45,23 @@ namespace LearningMpaAbp.Web
                         L("Roles"),
                         url: "Roles",
                         icon: "local_offer",
-                        requiredPermissionName: PermissionNames.Pages_Roles
+                        requiredPermissionName: PermissionNames.Pages_Roles//用户指定权限
                     )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Tasks,
+                        L("Tasks"),
+                        url:"Tasks/Index",
+                        icon:"people",
+                        requiresAuthentication:true
+                        )
                 )
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.About,
                         L("About"),
                         url: "About",
-                        icon: "info"
+                        icon: "info"//默认显示
                     )
                 ).AddItem( //Menu items below is just for demonstration!
                     new MenuItemDefinition(

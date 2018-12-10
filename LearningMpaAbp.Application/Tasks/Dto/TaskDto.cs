@@ -1,5 +1,6 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,7 @@ namespace LearningMpaAbp.Tasks.Dto
 
         public string Description { get; set; }
 
+        [JsonConverter(typeof(DateFormat))]//序列化时间（return Json时使用）
         public DateTime CreationTime { get; set; }
 
         public TaskState State { get; set; }

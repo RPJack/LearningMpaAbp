@@ -1,4 +1,5 @@
 ﻿using Abp.Application.Services;
+using Abp.Application.Services.Dto;
 using Abp.Domain.Repositories;
 using LearningMpaAbp.Tasks.Dto;
 using System;
@@ -27,5 +28,7 @@ namespace LearningMpaAbp.Tasks
         void DeleteTask(int taskId);
 
         IList<TaskDto> GetAllTasks();
+
+        PagedResultDto<TaskDto> GetPagedTasks(GetTaskInput input);
     }
 }

@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using X.PagedList;
 
 namespace LearningMpaAbp.Web.Controllers
 {
@@ -55,6 +56,23 @@ namespace LearningMpaAbp.Web.Controllers
         {
             var output = _taskAppServices.GetTasks(input);
             return PartialView("_List",output.Tasks);
+        }
+
+        public ActionResult PagedList(int? page)
+        {
+            var pageSize = 5;
+            var pageNumber = page ?? 1;
+            var filter = new GetTaskInput
+            {
+                SkipCount = (pageNumber - 1) * pageSize,//忽略个数
+                MaxResultCount = pageSize
+            };
+            var result = _taskAppServices.GetPagedTasks(filter);
+            //已在应用服务层手动完成了分页逻辑，所以需要手动构造分页结果
+            var onePageOfTasks = new StaticPagedList<TaskDto>(result.Items, pageNumber, pageSize, result.TotalCount);
+            //将分页结果放入到ViewBag供View使用
+            ViewBag.OnePageOfTasks = onePageOfTasks;
+            return View();
         }
 
         

@@ -1,13 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Dynamic.Core;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
+using Abp.Extensions;
+using Abp.Linq.Extensions;
 using Abp.Timing;
 using AutoMapper;
+using Castle.Core.Internal;
 using LearningMpaAbp.Tasks.Dto;
 
 namespace LearningMpaAbp.Tasks
@@ -47,6 +52,34 @@ namespace LearningMpaAbp.Tasks
         {
             var tasks = taskRespository.GetAll();
             return tasks.MapTo<List<TaskDto>>();
+        }
+
+        /// <summary>
+        /// 任务分页
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public PagedResultDto<TaskDto> GetPagedTasks(GetTaskInput input)
+        {
+            //过滤
+            var query = taskRespository.GetAll()
+                .WhereIf(input.State.HasValue, t => t.State == input.State.Value)
+                .WhereIf(!input.Filter.IsNullOrEmpty(), t => t.Title.Contains(input.Filter))
+                .WhereIf(input.AssingedPersonId.HasValue, t => t.AssignedPersonId == input.AssingedPersonId.Value);
+
+            //排序
+            query = !string.IsNullOrEmpty(input.Sorting) ? query.OrderBy(input.Sorting.ToString()) : query.OrderByDescending(t => t.CreationTime);
+
+            //获取总数
+            var taskCount = query.Count();
+
+            //分页方式-以前的分页方式
+            //var taskList = query.Skip(input.SkipCount).Take(input.MaxResultCount).ToList();
+
+            //ABP自带分页方式
+            var taskList = query.PageBy(input).ToList();
+
+            return new PagedResultDto<TaskDto>(taskCount,taskList.MapTo<List<TaskDto>>());
         }
 
         public TaskDto GetTaskById(int taskId)

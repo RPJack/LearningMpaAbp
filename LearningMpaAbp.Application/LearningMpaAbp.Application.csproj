@@ -211,6 +211,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppConsts.cs" />
+    <Compile Include="Dto\PagedAndFilteredInputDto.cs" />
+    <Compile Include="Dto\PagedAndSortedInputDto.cs" />
+    <Compile Include="Dto\PagedInputDto.cs" />
+    <Compile Include="Dto\PagedSortedAndFilteredInputDto.cs" />
     <Compile Include="IDtoMapping.cs" />
     <Compile Include="LearningMpaAbpApplicationModule.cs" />
     <Compile Include="LearningMpaAbpAppServiceBase.cs" />
@@ -264,6 +269,10 @@
     <ProjectReference Include="..\LearningMpaAbp.Core\LearningMpaAbp.Core.csproj">
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>LearningMpaAbp.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LearningMpaAbp.EntityFramework\LearningMpaAbp.EntityFramework.csproj">
+      <Project>{3979f157-deb0-4878-ab1d-4cef6b5a1300}</Project>
+      <Name>LearningMpaAbp.EntityFramework</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

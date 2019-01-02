@@ -12,6 +12,7 @@ namespace LearningMpaAbp.Api
     {
         public override void Initialize()
         {
+            //将当前程序集的特定类或接口注册到依赖注入容器中
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
 
             Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder

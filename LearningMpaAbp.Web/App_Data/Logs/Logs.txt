@@ -2412,3 +2412,308 @@ WARN  2018-12-10 16:24:33,012 [26   ] naries.DictionaryBasedLocalizationSource -
 WARN  2018-12-10 16:24:33,104 [23   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
 WARN  2018-12-10 16:24:35,010 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
 WARN  2018-12-10 16:24:35,076 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+DEBUG 2018-12-11 10:32:22,453 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-12-11 10:32:22,485 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-12-11 10:32:22,492 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.Web.LearningMpaAbpWebModule, LearningMpaAbp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,496 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.LearningMpaAbpDataModule, LearningMpaAbp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,496 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,496 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,496 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,496 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,497 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,497 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,497 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.LearningMpaAbpCoreModule, LearningMpaAbp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,497 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.LearningMpaAbpApplicationModule, LearningMpaAbp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,498 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,498 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.Api.LearningMpaAbpWebApiModule, LearningMpaAbp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,498 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,498 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,498 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,498 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,499 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:22,503 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-12-11 10:32:22,823 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-12-11 10:32:22,823 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-12-11 10:32:22,823 [1    ] o.Configuration.LanguageManagementConfig - Converted LearningMpaAbp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-12-11 10:32:22,823 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-12-11 10:32:23,263 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: LearningMpaAbp.EntityFramework.LearningMpaAbpDbContext, LearningMpaAbp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:32:25,352 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-12-11 10:32:25,439 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-12-11 10:32:25,503 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-12-11 10:32:25,534 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: LearningMpaAbp
+DEBUG 2018-12-11 10:32:25,576 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-12-11 10:32:25,634 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-12-11 10:32:25,694 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 18 classes define auto mapping attributes
+DEBUG 2018-12-11 10:32:25,694 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-12-11 10:32:25,702 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-12-11 10:32:25,702 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Users.Dto.CreateUserDto
+DEBUG 2018-12-11 10:32:25,702 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Users.Dto.UpdateUserDto
+DEBUG 2018-12-11 10:32:25,702 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Users.Dto.UserDto
+DEBUG 2018-12-11 10:32:25,702 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.CreateTaskInput
+DEBUG 2018-12-11 10:32:25,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.GetTaskInput
+DEBUG 2018-12-11 10:32:25,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.GetTasksOutput
+DEBUG 2018-12-11 10:32:25,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.TaskDto
+DEBUG 2018-12-11 10:32:25,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.UpdateTaskInput
+DEBUG 2018-12-11 10:32:25,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Roles.Dto.CreateRoleDto
+DEBUG 2018-12-11 10:32:25,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Roles.Dto.PermissionDto
+DEBUG 2018-12-11 10:32:25,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Roles.Dto.RoleDto
+DEBUG 2018-12-11 10:32:25,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-12-11 10:32:25,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-12-11 10:32:25,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.MultiTenancy.Dto.TenantDto
+DEBUG 2018-12-11 10:32:25,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-12-11 10:32:25,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-12-11 10:32:27,091 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-12-11 10:32:27,092 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-12-11 10:32:27,092 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Tasks.ITaskAppServices' with service name 'app/taskAppServices'.
+DEBUG 2018-12-11 10:32:27,093 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-12-11 10:32:27,094 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-12-11 10:32:27,095 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-12-11 10:32:27,096 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+WARN  2018-12-11 10:32:40,143 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:32:41,900 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:33:01,505 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:33:01,509 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:33:01,800 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:33:01,877 [16   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:37:52,919 [53   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:37:52,919 [53   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:37:52,989 [53   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:37:53,240 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+INFO  2018-12-11 10:38:00,602 [38   ] LearningMpaAbp.Tasks.TaskAppServices     - Updating a task for input:[UpdateTaskInput>TaskId=3,AssignedPersonId=1,State=Open]
+INFO  2018-12-11 10:38:04,682 [39   ] LearningMpaAbp.Tasks.TaskAppServices     - Updating a task for input:[UpdateTaskInput>TaskId=4,AssignedPersonId=1,State=Open]
+DEBUG 2018-12-11 10:43:43,574 [94   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-12-11 10:43:43,575 [94   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-12-11 10:43:43,575 [94   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-12-11 10:43:43,575 [94   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-12-11 10:46:09,073 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-12-11 10:46:09,086 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-12-11 10:46:09,093 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.Web.LearningMpaAbpWebModule, LearningMpaAbp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,094 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.LearningMpaAbpDataModule, LearningMpaAbp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,094 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,095 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,095 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,095 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,095 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,095 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,096 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.LearningMpaAbpCoreModule, LearningMpaAbp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,096 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.LearningMpaAbpApplicationModule, LearningMpaAbp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,096 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,096 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.Api.LearningMpaAbpWebApiModule, LearningMpaAbp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,096 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,096 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,097 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,097 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,097 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:09,102 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-12-11 10:46:09,953 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-12-11 10:46:09,953 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-12-11 10:46:09,953 [1    ] o.Configuration.LanguageManagementConfig - Converted LearningMpaAbp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-12-11 10:46:09,953 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-12-11 10:46:10,306 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: LearningMpaAbp.EntityFramework.LearningMpaAbpDbContext, LearningMpaAbp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-11 10:46:19,746 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-12-11 10:46:19,842 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-12-11 10:46:19,894 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-12-11 10:46:19,925 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: LearningMpaAbp
+DEBUG 2018-12-11 10:46:19,956 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-12-11 10:46:20,098 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-12-11 10:46:20,158 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 18 classes define auto mapping attributes
+DEBUG 2018-12-11 10:46:20,158 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-12-11 10:46:20,164 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-12-11 10:46:20,165 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Users.Dto.CreateUserDto
+DEBUG 2018-12-11 10:46:20,165 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Users.Dto.UpdateUserDto
+DEBUG 2018-12-11 10:46:20,165 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Users.Dto.UserDto
+DEBUG 2018-12-11 10:46:20,165 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.CreateTaskInput
+DEBUG 2018-12-11 10:46:20,165 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.GetTaskInput
+DEBUG 2018-12-11 10:46:20,165 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.GetTasksOutput
+DEBUG 2018-12-11 10:46:20,165 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.TaskDto
+DEBUG 2018-12-11 10:46:20,166 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.UpdateTaskInput
+DEBUG 2018-12-11 10:46:20,166 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Roles.Dto.CreateRoleDto
+DEBUG 2018-12-11 10:46:20,166 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Roles.Dto.PermissionDto
+DEBUG 2018-12-11 10:46:20,166 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Roles.Dto.RoleDto
+DEBUG 2018-12-11 10:46:20,166 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-12-11 10:46:20,166 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-12-11 10:46:20,166 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.MultiTenancy.Dto.TenantDto
+DEBUG 2018-12-11 10:46:20,167 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-12-11 10:46:20,167 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-12-11 10:46:22,689 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-12-11 10:46:22,690 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-12-11 10:46:22,691 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Tasks.ITaskAppServices' with service name 'app/taskAppServices'.
+DEBUG 2018-12-11 10:46:22,691 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-12-11 10:46:22,692 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-12-11 10:46:22,694 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-12-11 10:46:22,695 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+WARN  2018-12-11 10:46:37,854 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:46:40,869 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:52:24,559 [35   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2018-12-11 10:52:37,644 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:52:37,799 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:52:38,704 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+WARN  2018-12-11 10:52:38,879 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+DEBUG 2019-01-02 15:12:03,727 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-02 15:12:03,740 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-01-02 15:12:03,750 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.Web.LearningMpaAbpWebModule, LearningMpaAbp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,752 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.LearningMpaAbpDataModule, LearningMpaAbp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,752 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,753 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,753 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,753 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,753 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,753 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,753 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.LearningMpaAbpCoreModule, LearningMpaAbp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,753 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.LearningMpaAbpApplicationModule, LearningMpaAbp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,754 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,754 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LearningMpaAbp.Api.LearningMpaAbpWebApiModule, LearningMpaAbp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,754 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,754 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,754 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,754 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,754 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:03,758 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-01-02 15:12:04,022 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-02 15:12:04,022 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-02 15:12:04,022 [1    ] o.Configuration.LanguageManagementConfig - Converted LearningMpaAbp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-02 15:12:04,022 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-02 15:12:04,421 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: LearningMpaAbp.EntityFramework.LearningMpaAbpDbContext, LearningMpaAbp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-02 15:12:06,696 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-02 15:12:06,780 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-02 15:12:06,839 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-02 15:12:06,872 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: LearningMpaAbp
+DEBUG 2019-01-02 15:12:06,905 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-02 15:12:06,979 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-02 15:12:07,038 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 18 classes define auto mapping attributes
+DEBUG 2019-01-02 15:12:07,039 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-02 15:12:07,045 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-02 15:12:07,045 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Users.Dto.CreateUserDto
+DEBUG 2019-01-02 15:12:07,045 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Users.Dto.UpdateUserDto
+DEBUG 2019-01-02 15:12:07,045 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Users.Dto.UserDto
+DEBUG 2019-01-02 15:12:07,045 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.CreateTaskInput
+DEBUG 2019-01-02 15:12:07,045 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.GetTaskInput
+DEBUG 2019-01-02 15:12:07,045 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.GetTasksOutput
+DEBUG 2019-01-02 15:12:07,046 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.TaskDto
+DEBUG 2019-01-02 15:12:07,046 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Tasks.Dto.UpdateTaskInput
+DEBUG 2019-01-02 15:12:07,046 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-02 15:12:07,046 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Roles.Dto.PermissionDto
+DEBUG 2019-01-02 15:12:07,046 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Roles.Dto.RoleDto
+DEBUG 2019-01-02 15:12:07,047 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-02 15:12:07,047 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-01-02 15:12:07,047 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-02 15:12:07,047 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-01-02 15:12:07,047 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LearningMpaAbp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-01-02 15:12:08,379 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-01-02 15:12:08,380 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-01-02 15:12:08,381 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Tasks.ITaskAppServices' with service name 'app/taskAppServices'.
+DEBUG 2019-01-02 15:12:08,382 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-01-02 15:12:08,383 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-01-02 15:12:08,384 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-01-02 15:12:08,385 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LearningMpaAbp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+WARN  2019-01-02 15:12:12,662 [8    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2019-01-02 15:12:35,560 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+WARN  2019-01-02 15:12:36,680 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+WARN  2019-01-02 15:13:09,851 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'LearningMpaAbp'!
+WARN  2019-01-02 15:13:09,855 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'LearningMpaAbp'!
+WARN  2019-01-02 15:13:10,120 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!
+WARN  2019-01-02 15:13:10,202 [8    ] naries.DictionaryBasedLocalizationSource - Can not find 'Tasks' in localization source 'LearningMpaAbp'!

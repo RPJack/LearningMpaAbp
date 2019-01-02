@@ -55,6 +55,7 @@
         });
     }
 
+    var taskService = abp.services.app.task;
     function deleteTask(id) {
     abp.message.confirm(
         "是否删除Id为" + id + "的任务信息",

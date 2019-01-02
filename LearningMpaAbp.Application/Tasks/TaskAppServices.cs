@@ -6,6 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
+using Abp.Authorization;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
 using Abp.Extensions;
@@ -13,6 +14,7 @@ using Abp.Linq.Extensions;
 using Abp.Timing;
 using AutoMapper;
 using Castle.Core.Internal;
+using LearningMpaAbp.Authorization;
 using LearningMpaAbp.Tasks.Dto;
 
 namespace LearningMpaAbp.Tasks
@@ -39,6 +41,7 @@ namespace LearningMpaAbp.Tasks
             return taskRespository.InsertAndGetId(task);
         }
 
+        [AbpAuthorize(PermissionNames.Pages_Tasks_Delete)]
         public void DeleteTask(int taskId)
         {
             var task = taskRespository.Get(taskId);

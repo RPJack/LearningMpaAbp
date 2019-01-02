@@ -12,6 +12,9 @@ using LearningMpaAbp.MultiTenancy;
 
 namespace LearningMpaAbp
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [DependsOn(typeof(AbpZeroCoreModule))]
     public class LearningMpaAbpCoreModule : AbpModule
     {
@@ -41,6 +44,7 @@ namespace LearningMpaAbp
             AppRoleConfig.Configure(Configuration.Modules.Zero().RoleManagement);
 
             Configuration.Authorization.Providers.Add<LearningMpaAbpAuthorizationProvider>();
+            Configuration.Authorization.Providers.Add<TaskAuthorizationProvider>();//授权提供器
 
             Configuration.Settings.Providers.Add<AppSettingProvider>();
         }

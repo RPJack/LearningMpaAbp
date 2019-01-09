@@ -1,7 +1,10 @@
-﻿using Abp.Web.Mvc.Authorization;
+﻿using Abp.Application.Services.Dto;
+using Abp.Runtime.Caching;
+using Abp.Web.Mvc.Authorization;
 using LearningMpaAbp.Tasks;
 using LearningMpaAbp.Tasks.Dto;
 using LearningMpaAbp.Users;
+using LearningMpaAbp.Users.Dto;
 using LearningMpaAbp.Web.Models.Tasks;
 using System;
 using System.Collections.Generic;
@@ -17,11 +20,14 @@ namespace LearningMpaAbp.Web.Controllers
     {
         private readonly ITaskAppServices _taskAppServices;
         private readonly IUserAppService _userAppService;
+        private readonly ICacheManager _cachManager;
 
-        public TasksController(ITaskAppServices taskAppServices,IUserAppService userAppService)
+        public TasksController(ITaskAppServices taskAppServices,IUserAppService userAppService,ICacheManager cacheManager)
         {
             _taskAppServices = taskAppServices;
             _userAppService = userAppService;
+            _cachManager = cacheManager;
+
         }
         // GET: Tasks
         public ActionResult Index(GetTaskInput input)
@@ -34,6 +40,16 @@ namespace LearningMpaAbp.Web.Controllers
             return View(model);
         }
 
+
+        public PartialViewResult RemoteCreate()
+        {
+            var userList = _cachManager.GetCache("Controller").Get("AllUsers",
+                ()=> _userAppService.GetUsers() as ListResultDto<UserDto>);
+            ViewBag.AssignedPersonId = new SelectList(userList.Items, "Id", "Name");
+            return PartialView("_CreateTaskPartial");
+        }
+
+        [OutputCache(Duration =120,VaryByCustom ="none")]
         [ChildActionOnly]
         public PartialViewResult Create()
         {
@@ -99,7 +115,21 @@ namespace LearningMpaAbp.Web.Controllers
 
             return PartialView("_List", output.Tasks);
         }
+
+
+        public void DeleteTask(int TaskId)
+        {
+            _taskAppServices.DeleteTask(TaskId);
+        }
+
         
+        public JsonResult adl()
+        {
+            var aa = new object();
+
+            return AbpJson(aa,null,null,JsonRequestBehavior.AllowGet);
+        }
+
 
     }
 }

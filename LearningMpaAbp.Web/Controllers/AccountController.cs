@@ -54,8 +54,8 @@ namespace LearningMpaAbp.Web.Controllers
             IMultiTenancyConfig multiTenancyConfig,
             LogInManager logInManager,
             ISessionAppService sessionAppService,
-            ILanguageManager languageManager, 
-            ITenantCache tenantCache, 
+            ILanguageManager languageManager,
+            ITenantCache tenantCache,
             IAuthenticationManager authenticationManager)
         {
             _tenantManager = tenantManager;
@@ -138,14 +138,20 @@ namespace LearningMpaAbp.Web.Controllers
                 identity = await _userManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
             }
 
+            //添加身份信息，以便在AbpSession中使用
+            identity.AddClaim(new Claim(ClaimTypes.Email, user.EmailAddress));
+
             _authenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
             // Many browsers do not clean up session cookies when you close them. So the rule of thumb must be:
             // For having a consistent behaviour across all browsers, don't rely solely on browser behaviour for proper clean-up
             // of session cookies. It is safer to use non-session cookies (IsPersistent == true) in bundle with an expiration date.
             // See http://blog.petersondave.com/cookies/Session-Cookies-in-Chrome-Firefox-and-Sitecore/
-            if (rememberMe) {
+            if (rememberMe)
+            {
                 _authenticationManager.SignIn(new AuthenticationProperties { IsPersistent = true }, identity);
-            } else {
+            }
+            else
+            {
                 _authenticationManager.SignIn(
                     new AuthenticationProperties
                     {

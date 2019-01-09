@@ -30,5 +30,7 @@ namespace LearningMpaAbp.Tasks
         IList<TaskDto> GetAllTasks();
 
         PagedResultDto<TaskDto> GetPagedTasks(GetTaskInput input);
+
+        TaskCacheItem GetTaskFromCacheById(int taskId);
     }
 }

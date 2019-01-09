@@ -1,6 +1,7 @@
 ﻿using Abp.IdentityFramework;
 using Abp.UI;
 using Abp.Web.Mvc.Controllers;
+using LearningMpaAbp.Extensions;
 using Microsoft.AspNet.Identity;
 
 namespace LearningMpaAbp.Web.Controllers
@@ -10,6 +11,10 @@ namespace LearningMpaAbp.Web.Controllers
     /// </summary>
     public abstract class LearningMpaAbpControllerBase : AbpController
     {
+
+        //隐藏父类的AbpSession
+        public new IAbpSessionExtension AbpSession { get; set; }
+
         protected LearningMpaAbpControllerBase()
         {
             LocalizationSourceName = LearningMpaAbpConsts.LocalizationSourceName;

@@ -6,7 +6,11 @@
             <li class="list-group-item">
                 <div class="btn-group pull-right">
                     <button type="button" class="btn btn-info" onclick="editTask(@task.Id);">Edit</button>
-                    <button type="button" class="btn btn-success" onclick="deleteTask(@task.Id);">Delete</button>
+                    @if (IsGranted(LearningMpaAbp.Authorization.PermissionNames.Pages_Tasks_Delete))
+                    {
+                        <button type="button" class="btn btn-success" onclick="deleteTask(@task.Id);">Delete</button>
+                    }
+
                 </div>
                 <div class="media">
                     <a class="media-left" href="#">

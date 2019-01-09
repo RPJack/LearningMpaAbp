@@ -1,5 +1,4 @@
-﻿
-    var taskService = abp.services.app.task;
+﻿    var taskService = abp.services.app.taskAppServices;
 
 (function(){
     var $taskStateCombobox = $("#TaskStateCombobox");
@@ -53,10 +52,11 @@
         .fail(function (data){
             abp.notify.error("系统错误！");
         });
-    }
+}
 
-    var taskService = abp.services.app.task;
-    function deleteTask(id) {
+    
+function deleteTask(id) {
+
     abp.message.confirm(
         "是否删除Id为" + id + "的任务信息",
         function (isConfirmed) {

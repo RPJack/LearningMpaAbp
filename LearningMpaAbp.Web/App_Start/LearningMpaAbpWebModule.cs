@@ -13,6 +13,8 @@ using LearningMpaAbp.Api;
 using Castle.MicroKernel.Registration;
 using Hangfire;
 using Microsoft.Owin.Security;
+using System;
+using Abp.Runtime.Caching.Redis;
 
 namespace LearningMpaAbp.Web
 {
@@ -38,6 +40,21 @@ namespace LearningMpaAbp.Web
             //{
             //    configuration.GlobalConfiguration.UseSqlServerStorage("Default");
             //});
+
+            //配置使用Redis缓存
+            //Configuration.Caching.UseRedis();
+
+            //配置所有Cache的默认过期时间为2小时
+            Configuration.Caching.ConfigureAll(cache =>
+            {
+                cache.DefaultSlidingExpireTime = TimeSpan.FromHours(2);
+            });
+            //配置指定的Cache过期时间为10分钟
+            Configuration.Caching.Configure("ControllerCache", cache =>
+            {
+                cache.DefaultSlidingExpireTime = TimeSpan.FromMinutes(10);
+            });
+
         }
 
         public override void Initialize()

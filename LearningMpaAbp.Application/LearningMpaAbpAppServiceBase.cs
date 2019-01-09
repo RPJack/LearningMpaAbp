@@ -4,6 +4,7 @@ using Abp.Application.Services;
 using Abp.IdentityFramework;
 using Abp.Runtime.Session;
 using LearningMpaAbp.Authorization.Users;
+using LearningMpaAbp.Extensions;
 using LearningMpaAbp.MultiTenancy;
 using LearningMpaAbp.Users;
 using Microsoft.AspNet.Identity;
@@ -15,6 +16,9 @@ namespace LearningMpaAbp
     /// </summary>
     public abstract class LearningMpaAbpAppServiceBase : ApplicationService
     {
+        //隐藏父类的AbpSession
+        public new IAbpSessionExtension AbpSession { get; set; }
+
         public TenantManager TenantManager { get; set; }
 
         public UserManager UserManager { get; set; }
